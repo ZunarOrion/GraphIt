@@ -1,27 +1,37 @@
 <app-header></app-header>
 
-<div id="description">
-    <h2>
-        Welcome to GraphIt!
-    </h2>
+<div id="content">
+    <div id="description">
+        <h2>
+            Welcome to GraphIt!
+        </h2>
+        
+        <p>
+            GraphIt is an easy way to visualise your date in graphs and numbers.
+        </p>    
+    </div>
     
-    <p>
-        GraphIt is an easy way to visualise your date in graphs and numbers.
-    </p>    
+    <div id="instructions-and-inputs">
+        <h3>
+            How to use GraphIt:
+        </h3>
+        <p>
+            Firstly add a CSV file filled with data.
+            <app-fileInput></app-fileInput>
+        </p>
+        
+        <p>
+            Secondly prompt which data you want as your y-axis and X-axis.
+            <app-axisInputs></app-axisInputs>
+        </p>
+
+        <app-renderButton></app-renderButton>
+    </div>
+    
+    <div id="graph-display">
+        <p>Here is the graphs of your data:</p>
+        <app-displayBox></app-displayBox>
+    </div>
 </div>
 
-<div id="instructions-and-inputs">
-    <p>
-        How to use GraphIt:
-    </p>
-    <p>
-        Firstly add a CSV file filled with data.
-        <app-fileInput></app-fileInput>
-    </p>
-    
-    <p>
-        Secondly prompt which data you want as your y-axis and X-axis.
-        <app-axisInputs></app-axisInputs>
-    </p>
-    
-</div>
+<app-footer></app-footer>
