@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-import { InputsComponent } from './inputs/inputs.component';
+import { FileInputComponent } from './file.input/file.input.component';
+import { AxisInputsComponent } from './axis.inputs/axis.inputs.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, InputsComponent],
+  imports: [HeaderComponent, FileInputComponent, AxisInputsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
